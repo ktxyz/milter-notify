@@ -2,6 +2,9 @@
 
 make
 
+sudo cp bin/milter-notify /usr/local
+sudo cp milter_notify.service /etc/systemd/system/milter_notify.service
+
 sudo mkdir /etc/milter-notify
 sudo chown postfix:postfix /etc/milter-notify
 sudo chmod 755 /etc/milter-notify
